@@ -1,0 +1,76 @@
+
+
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ .container{
+    background-color:skyblue ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .main-container{
+    background-color: #fff;
+    border-radius: 6px;
+    height: 600px;
+    width: 450px;
+    padding: 15px;
+ }
+
+ h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+ }
+
+ .input-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+ }
+
+ #text-input{
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+ }
+
+
+ #button-add{
+    padding: 7px 9px;
+    border: 0;
+    background-color: rgb(25, 25, 128);
+    border-radius: 25px;
+    color: #fff;
+    margin: 0 4px;
+ }
+
+ .to-do-container{
+overflow-y: scroll;
+
+ }
+
+ .item-container{
+    display: flex;
+    margin-bottom: 5px;
+ }
+ #to-do-message{
+    font-size: 22px;
+    letter-spacing: 1.5px;
+user-select: none;
+width: 100%;
+ }
+
+#edit,#delete{
+padding: 7px 5px;
+border: 0;
+background-color: transparent;
+}
