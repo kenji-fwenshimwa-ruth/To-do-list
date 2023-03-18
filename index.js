@@ -28,29 +28,48 @@ const toDoContainer = document.querySelector(".to-do-container")
         const itemContainer = document.createElement('div');
         itemContainer.classList.add('item-container');
 
-        toDoContainer.appendChild(itemContainer);
+         toDoContainer.appendChild(itemContainer);
         
 
         const toDoMessage = document.createElement('p');
         toDoMessage.id ='to-do-message';
         toDoMessage.innerText = inputField.value;
-        toDoContainer.appendChild(toDoMessage);
+        itemContainer.appendChild(toDoMessage);
 
         // creating the buttons
         const editButton = document.createElement('button');
         editButton.id = 'edit';
-        const editP = document.createElement('p');
-        editP.id = 'edit-paragraph';
-        editButton.appendChild(editP);
-        toDoContainer.appendChild(editButton);
+        
+         editButton.style = "width:50px; height:40px; background-color:white;"
+
+        const editimage = document.createElement('img');
+        editimage.src = 'download.png';
+         editimage.style = "width:20px; height:20px; "
+        editButton.appendChild(editimage);
+        itemContainer.appendChild(editButton);
+
+         editButton.addEventListener('click', ()=>{
+            inputField.value = toDoMessage.innerText;
+            const main = editButton.parentElement;
+            main.parentElement.removeChild(main); 
+         });
 
 
         const deleteButton = document.createElement('button');
         deleteButton.id = 'delete';
-        const deleteP =document.createElement('p')
-        deleteP.id = 'delete-paragraph';
-        deleteButton.appendChild(deleteP);
-        toDoContainer.appendChild(deleteButton);
+        deleteButton.style = "width:50px; height:40px; background-color:white; margin:0 3px;"
+
+
+        const deleteimage =document.createElement('img')
+        deleteimage.src = 'images.png';
+        deleteimage.style = "width:20px; height:20px; "
+        deleteButton.appendChild(deleteimage);
+        itemContainer.appendChild(deleteButton);
+
+        deleteButton.addEventListener('click',()=>{
+            const main = deleteButton.parentElement;
+            main.parentElement.removeChild(main);
+        });
 
 
 

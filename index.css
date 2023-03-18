@@ -8,7 +8,7 @@
  }
 
  .container{
-    background-color:skyblue ;
+    background-color:#000 ;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,23 +16,27 @@
  }
 
  .main-container{
-    background-color: #fff;
-    border-radius: 6px;
+    background-color:aqua;
+    border-radius: 30px;
     height: 600px;
     width: 450px;
     padding: 15px;
+    border: 2.5px solid blue;
  }
 
  h2{
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
     margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
  }
 
  .input-container{
     display: flex;
     flex-direction: row;
     margin-bottom: 15px;
+   
  }
 
  #text-input{
@@ -41,6 +45,8 @@
     font-size: 25px;
     letter-spacing: 2px;
     font-weight: bold;
+    border-radius: 30px;
+    border: 0;
  }
 
 
@@ -65,8 +71,8 @@ overflow-y: scroll;
  #to-do-message{
     font-size: 22px;
     letter-spacing: 1.5px;
-user-select: none;
-width: 100%;
+    user-select: none;
+    width: 100%;
  }
 
 #edit,#delete{
